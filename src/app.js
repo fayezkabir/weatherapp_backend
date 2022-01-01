@@ -35,7 +35,7 @@ app.get("/help", (req, res) => {
     // res.send("Help page")
     res.render("help", {
         title: 'Help',
-        helpMessage: 'get a fucking hot mal',
+        helpMessage: 'This is some dummy help Text.',
         name: 'Fayez Kabir'
     })
 });
