@@ -1,7 +1,7 @@
 console.log("client side javascript file loaded");
 
 const fetchWeather = async ( location ) => {
-    return dataObj = await fetch(`http://localhost:8080/weather?address=${location}`).then((response) => {
+    return dataObj = await fetch(`/weather?address=${location}`).then((response) => {
         return response.json().then(data => {
             return data;
         })
