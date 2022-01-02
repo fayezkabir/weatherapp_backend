@@ -13,14 +13,16 @@
     <div class="main-content">
         {{>header}}
 
-        <p>Use this site to get your website</p>
+        <h2>Use this site to get your forecast of any location</h2>
 
         <form>
             <input placeholder="location" />
             <button>Search</button>
         </form>
-        <p id="message"></p>
         <p id="error"></p>
+        <p id="message" class="befr"></p>
+        <p id="temp" class="befr"></p>
+        <p id="humid" class="befr"></p>
     </div>
     {{>footer}}
     

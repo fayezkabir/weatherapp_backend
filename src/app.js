@@ -70,7 +70,7 @@ app.get("/weather", (req, res) => {
                 });
             }
             res.send({
-                forecast: `${data.daily.data[0].summary} it is currently ${data.currently.temperature} degrees out there and there is ${data.currently.precipProbability}% of rain `,
+                forecast: data,
                 location,
                 address: req.query.address
             });
